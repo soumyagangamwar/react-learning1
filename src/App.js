@@ -6,8 +6,9 @@ import './App.css';
  * defult exports no need to import with same name 
  * but named exports must be imported with exact name of the const
  */
-// import Greet from './components/Greet';
-import MyComponent from './components/Greet'
+// import { Greet } from './components/Greet';
+import MyComponent from './components/Greet';
+import { Welcome } from './components/Welcome';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
        
-        <MyComponent></MyComponent>     
+        <MyComponent></MyComponent>  
+        <Welcome/>   
       </header>
     </div>
   );
