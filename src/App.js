@@ -2,22 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+/**
+ * defult exports no need to import with same name 
+ * but named exports must be imported with exact name of the const
+ */
+// import Greet from './components/Greet';
+import MyComponent from './components/Greet'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+        <MyComponent></MyComponent>
+         
+       
       </header>
     </div>
   );
